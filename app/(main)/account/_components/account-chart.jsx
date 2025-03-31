@@ -48,12 +48,14 @@ const MONTHS = [
 const currentYear = new Date().getFullYear();
 const YEARS = Array.from({ length: currentYear - 2019 }, (_, i) => (2020 + i).toString());
 
-// Function to convert UTC to IST (UTC+5:30)
+// Updated function to convert UTC to IST
 const convertUTCtoIST = (utcDate) => {
-  const utcTime = new Date(utcDate);
-  // Add 5 hours and 30 minutes (5.5 * 60 * 60 * 1000 milliseconds)
-  const istTime = new Date(utcTime.getTime() + (5.5 * 60 * 60 * 1000));
-  return istTime;
+  return new Date(utcDate).toLocaleString('en-IN', { 
+    timeZone: 'Asia/Kolkata',
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric'
+  });
 };
 
 export function AccountChart({ transactions }) {
@@ -118,10 +120,11 @@ export function AccountChart({ transactions }) {
 
     // Group transactions by date in IST
     const grouped = filtered.reduce((acc, transaction) => {
-      // Convert UTC to IST
-      const istDate = convertUTCtoIST(transaction.date);
-      // Format the IST date
-      const formattedDate = format(istDate, "d MMM");
+      // Convert UTC to IST using the updated function
+      const istDateString = convertUTCtoIST(transaction.date);
+      // Extract just the day and month for display
+      const parts = istDateString.split(' ');
+      const formattedDate = `${parts[0]} ${parts[1]}`;
 
       if (!acc[formattedDate]) {
         acc[formattedDate] = { date: formattedDate, income: 0, expense: 0 };
