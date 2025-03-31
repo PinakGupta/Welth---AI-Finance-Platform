@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
+# Welth - AI Finance Platform 💰🤖
 
-## Getting Started
+Welcome to **Welth**, the ultimate AI-powered finance platform that makes managing your money effortless and smart! Track multiple accounts, monitor transactions, and receive insightful AI-driven analyses all in one elegant app.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Welth** is an AI-driven finance application designed to simplify your financial management. Whether you’re tracking your income, expenses, or setting up recurring transactions, Welth provides an intuitive interface and powerful analytics to keep you on top of your financial game. With AI enhancements, you can even auto-fill transaction forms and get detailed monthly spending analyses.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **Multi-Account Management**: Set up and track multiple financial accounts with a default account option.
+- **Transaction Tracking**: Easily add, view, and edit income and expense transactions.
+- **Visual Analytics**: Get insights with informative visuals including bar charts and pie charts.
+- **AI-Powered Assistance**: Utilize Gemini AI for auto-filling transaction data and detailed monthly expenditure analysis.
+- **Recurring Transactions**: Automate repetitive entries so you never miss a transaction.
+- **Budget Alerts**: Receive timely budget alerts via cron jobs if spending exceeds 80% of your set budget.
+- **Secure Authentication**: Powered by Clerk for robust user authentication.
+- **Email Notifications**: Stay updated with monthly AI analysis reports and alerts through Resend mail services.
+- **Bot Protection & Monitoring**: Track and secure transaction activities using Arcjet.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: [Next.js](https://nextjs.org/) & [Tailwind CSS](https://tailwindcss.com/)
+- **Backend & Database**: [Supabase](https://supabase.com/), [Prisma](https://www.prisma.io/)
+- **UI Components**: [Shadcn](https://ui.shadcn.com/)
+- **Authentication**: [Clerk](https://clerk.dev/)
+- **AI Integration**: Gemini API for transaction form auto-filling and expenditure analysis.
+- **Task Scheduling**: [Inngest](https://inngest.com/) for cron jobs (e.g., budget alerts).
+- **Bot Protection**: [Arcjet](https://arcjet.io/)
+- **Email Service**: [Resend](https://resend.com/)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*(Add screenshots here later)*
+
+---
+
+## 🔗 Deployment & Repository
+
+- **Deployed on**: [Vercel](https://vercel.com/)
+- **Source Code**: [GitHub Repository](https://github.com/your-username/your-repo)
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 🙌 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 🤝 Contact
+
+- **Project Link**: [GitHub Repository](https://github.com/your-username/your-repo)
+- For any questions or feedback, please feel free to open an issue.
+
+---
+
+Happy Tracking! 🎉
