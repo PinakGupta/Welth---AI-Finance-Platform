@@ -47,7 +47,8 @@ export async function getUserAccounts() {
 
     return serializedAccounts;
   } catch (error) {
-    console.error(error.message);
+    // console.error(error.message);
+    return { message: error.message , statusCode: 500 };
   }
 }
 
@@ -131,7 +132,8 @@ export async function createAccount(data) {
     revalidatePath("/dashboard");
     return { success: true, data: serializedAccount };
   } catch (error) {
-    throw new Error(error.message);
+    // throw new Error(error.message);
+    return { message: error.message , statusCode: 500 };
   }
 }
 

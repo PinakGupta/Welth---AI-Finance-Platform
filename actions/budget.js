@@ -58,8 +58,9 @@ export async function getCurrentBudget(accountId) {
         : 0,
     };
   } catch (error) {
-    console.error("Error fetching budget:", error);
-    throw error;
+    // console.error("Error fetching budget:", error);
+    // throw error;
+    return { message: error.message , statusCode: 500 };
   }
 }
 
@@ -94,7 +95,8 @@ export async function updateBudget(amount) {
       data: { ...budget, amount: budget.amount.toNumber() },
     };
   } catch (error) {
-    console.error("Error updating budget:", error);
-    return { success: false, error: error.message };
+    // console.error("Error updating budget:", error);
+    // return { success: false, error: error.message };
+    return { message: error.message , statusCode: 500 };
   }
 }

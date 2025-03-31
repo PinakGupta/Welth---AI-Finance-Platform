@@ -117,8 +117,9 @@ export async function bulkDeleteTransactions(transactionIds) {
   
       return { success: true };
     } catch (error) {
-      console.error("Bulk Delete Error:", error.message);
-      return { success: false, error: error.message };
+      // console.error("Bulk Delete Error:", error.message);
+      // return { success: false, error: error.message };
+      return { message: error.message , statusCode: 500 };
     }
   }
   
@@ -156,6 +157,7 @@ export async function updateDefaultAccount(accountId) {
     revalidatePath("/dashboard");
     return { success: true, data: serializeTransaction(account) };
   } catch (error) {
-    return { success: false, error: error.message };
+    // return { success: false, error: error.message };
+    return { message: error.message , statusCode: 500 };
   }
 }
