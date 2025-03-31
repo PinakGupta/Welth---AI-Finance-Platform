@@ -47,8 +47,7 @@ export async function getUserAccounts() {
 
     return serializedAccounts;
   } catch (error) {
-    // console.error(error.message);
-    return { message: error.message , statusCode: 500 };
+    console.error(error.message);
   }
 }
 
@@ -70,16 +69,15 @@ export async function createAccount(data) {
     if (decision.isDenied()) {
       if (decision.reason.isRateLimit()) {
         const { remaining, reset } = decision.reason;
-        // console.error({
-        //   code: "RATE_LIMIT_EXCEEDED",
-        //   details: {
-        //     remaining,
-        //     resetInSeconds: reset,
-        //   },
-        // });
+        console.error({
+          code: "RATE_LIMIT_EXCEEDED",
+          details: {
+            remaining,
+            resetInSeconds: reset,
+          },
+        });
 
-        // throw new Error("Too many requests. Please try again later.");
-        return { message: "Too many requests. Please try again later.", statusCode: 429 };
+        throw new Error("Too many requests. Please try again later.");
 
       }
 
@@ -134,8 +132,7 @@ export async function createAccount(data) {
     revalidatePath("/dashboard");
     return { success: true, data: serializedAccount };
   } catch (error) {
-    // throw new Error(error.message);
-    return { message: error.message , statusCode: 500 };
+    throw new Error(error.message);
   }
 }
 

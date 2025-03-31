@@ -15,8 +15,7 @@ export async function sendEmail({ to, subject, react }) {
 
     return { success: true, data };
   } catch (error) {
-    // console.error("Failed to send email:", error);
-    // return { success: false, error };
-    return { message: error.message , statusCode: 500 };
+    console.error("Failed to send email:", error);
+    return { success: false, error };
   }
 }

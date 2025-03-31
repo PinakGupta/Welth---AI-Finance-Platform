@@ -103,8 +103,8 @@ export async function seedTransactions() {
       message: `Created ${transactions.length} transactions`,
     };
   } catch (error) {
-    // console.error("Error seeding transactions:", error);
-    // return { success: false, error: error.message };
-    return { message: error.message , statusCode: 500 };
+    console.error("Error seeding transactions:", error);
+    return { success: false, error: error.message };
+    
   }
 }
