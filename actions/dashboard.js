@@ -70,15 +70,17 @@ export async function createAccount(data) {
     if (decision.isDenied()) {
       if (decision.reason.isRateLimit()) {
         const { remaining, reset } = decision.reason;
-        console.error({
-          code: "RATE_LIMIT_EXCEEDED",
-          details: {
-            remaining,
-            resetInSeconds: reset,
-          },
-        });
+        // console.error({
+        //   code: "RATE_LIMIT_EXCEEDED",
+        //   details: {
+        //     remaining,
+        //     resetInSeconds: reset,
+        //   },
+        // });
 
-        throw new Error("Too many requests. Please try again later.");
+        // throw new Error("Too many requests. Please try again later.");
+        return { message: "Too many requests. Please try again later.", statusCode: 429 };
+
       }
 
       throw new Error("Request blocked");
