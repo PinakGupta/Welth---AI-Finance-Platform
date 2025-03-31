@@ -24,6 +24,46 @@ Welcome to **Welth**, the ultimate AI-powered finance platform that makes managi
 
 ---
 
+## 📸 Screenshots
+
+### 1. Home Page
+| Home Page 1 | Home Page 2 | Home Page 3 |
+| ----------- | ----------- | ----------- |
+| ![Home Page 1](https://asset.cloudinary.com/dzduidnoo/8666da45172a982884b7fb089e4eb570) | ![Home Page 2](https://asset.cloudinary.com/dzduidnoo/bd56657ce6808bf7fe9abdcdf132743f) | ![Home Page 3](https://asset.cloudinary.com/dzduidnoo/45f6d34caf18637ceb1b47c442641c1f) |
+
+### 2. Login Page
+| Login Page |
+| ---------- |
+| ![Login Page](https://asset.cloudinary.com/dzduidnoo/f77a44512f575b611720a6476acccf38) |
+
+### 3. Create Transaction
+| Create Transaction |
+| ------------------ |
+| ![Create Transaction](https://asset.cloudinary.com/dzduidnoo/e15db7aba4ca49232f44204c972d7180) |
+
+### 4. Dashboard
+| Dashboard 1 | Dashboard 2 |
+| ----------- | ----------- |
+| ![Dashboard 1](https://asset.cloudinary.com/dzduidnoo/616006934a3309b42d05f0fd13eea9a4) | ![Dashboard 2](https://asset.cloudinary.com/dzduidnoo/43c09c3537abe723a22d4d4e5cb358f6) |
+
+### 5. Account Page
+| Account Page 1 | Account Page 2 |
+| -------------- | -------------- |
+| ![Account Page 1](https://asset.cloudinary.com/dzduidnoo/376ae51bd96b495a66f88bebe98e6d2d) | ![Account Page 2](https://asset.cloudinary.com/dzduidnoo/144681eddd6d51472d2441f89be780e5) |
+
+### 6. Email Notifications
+#### A. Budget Alert (When spending exceeds 80% of the limit)
+| Budget Alert |
+| ------------ |
+| ![Budget Alert](https://asset.cloudinary.com/dzduidnoo/1b755852a52ad443d60cea6685b9549b) |
+
+#### B. Monthly Analysis & AI Insights
+| Monthly Analysis | AI Insights |
+| ---------------- | ----------- |
+| ![Monthly Analysis](https://asset.cloudinary.com/dzduidnoo/55bc73dff6fafcbbb26747b293126c3c) | ![AI Insights](https://asset.cloudinary.com/dzduidnoo/1edcf115df0606d155f0995e8775e40e) |
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: [Next.js](https://nextjs.org/) & [Tailwind CSS](https://tailwindcss.com/)
@@ -35,11 +75,6 @@ Welcome to **Welth**, the ultimate AI-powered finance platform that makes managi
 - **Bot Protection**: [Arcjet](https://arcjet.io/)
 - **Email Service**: [Resend](https://resend.com/)
 
----
-
-## 📸 Screenshots
-
-*(Add screenshots here later)*
 
 ---
 
